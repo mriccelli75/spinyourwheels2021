@@ -1,0 +1,203 @@
+/*
+Theme Name: Spin Your Wheels 2021
+Theme URI: http://www.spinyourwheels.org
+Author:  Michael Riccelli
+Author URI: mriccelli75@gmail.com
+Description: Spin Your Wheels 2021 is a branded theme is set up specifically for Spin Your Wheels fundraising events 
+Version: 1.0
+*/
+
+/* Font Family Stacks Reference
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/* Colors scale 
+# Monocromatic Shades (primary blue going darker)
+    primary-brand-blue #1D6AB3;
+    primary-darker-shade-one: #407CBF;
+    primary-darker-shade-two: #3B72B0;
+    primary-darker-shade-three: #3669A2;
+    primary-darker-shade-four: #315F93;
+
+# Tints of Primary (primary blue going lighter to orange) to Complimentary
+    primary-brand-blue #1D6AB3;
+    primary-lighter-shade-one: #4F86C4;
+    primary-lighter-shade-two: #6C9ACE;
+    primary-lighter-shade-three: #7BA4D3;
+    primary-lighter-shade-four: #98B8DD;
+
+# Complimentary orange and tints
+    orange: #CC9933;
+    orange-lighter-shade-one: #D4A952;
+    orange-lighter-shade-two: #D8B162;
+# Grayscale
+    dark-gray: #343a40;
+    dark-lighter-gray: #484747;
+    dark-lighter-shade: #888484;
+    light-gray: #C7C2C2;
+*/
+
+/*
+# TYPOGRAPHY
+    font-stack-sans:  'Roboto Condensed', sans-serif;
+    font-stack-sans-sub: 'Open Sans', sans-serif;
+
+    light: 300;
+    normal: 400;
+*/  
+ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+    --font-stack-sans:  'Roboto Condensed', sans-serif;
+    --font-stack-body: 'Roboto', sans-serif;
+    --font-stack-sans-sub: 'Open Sans', sans-serif;
+    --light: 300;
+    --normal: 400;
+    --italics: italic;
+
+    --primary-brand-blue: #407CBF;
+    --primary-darker-shade-two: #3B72B0;
+    --primary-darker-shade-three: #3669A2;
+    --primary-darker-shade-four: #315F93;
+    --primary-darker-shade-four: #2C5684;
+
+    --primary-lighter-shade-one: #4F86C4;
+    --primary-lighter-shade-two: #6C9ACE;
+    --primary-lighter-shade-three: #7BA4D3;
+    --primary-lighter-shade-four: #98B8DD;
+    
+    --orange: #CC9933;
+    --orange-lighter-shade-one: #D4A952;
+    --orange-lighter-shade-two: #D8B162;
+
+    --dark-gray: #343a40;
+    --dark-lighter-gray: #484747;
+    --dark-lighter-shade: #888484;
+    --light-gray: #C7C2C2;
+}
+
+
+/* 
+---------------------------------------------
+body
+--------------------------------------------- 
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	position: relative;
+	font-family: var(--font-stack-sans);
+    font-weight: normal;
+    font-style: var(--italics);
+	margin: 0;
+	background: none;
+	color: var(--primary-brand-blue);
+}
+.btn-default.active, .btn-default:focus {
+    outline: none;
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+p {
+	position: relative;
+}
+body {
+	font-family: var(--font-stack-body);
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.5;
+	background: #fff;
+}
+html {
+	-webkit-tap-highlight-color: rgba(255,255,255);
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a:hover, a:focus, a:visited {
+	text-decoration: none;
+    outline: none;
+    color: var(--primary-lighter-shade-one);
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--primary-darker-shade-four);
+}
+.text-inverse {
+    color: white;
+}
+a.text-inverse {
+    color: white;
+}
+a.text-inverse:hover,
+a.text-inverse:visited {
+    color: white;
+}
+.top-right .social .txt {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: var(--font-stack-sans);
+    margin-right: 12px;
+}
+textarea {
+	resize: none;
+}
+textarea:focus, 
+input:focus, 
+select:focus, 
+a:focus, 
+button:focus {
+	outline: none;
+}
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+}
+.page-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 300px;
+	min-height: 400px;
+	overflow: hidden;
+}
+/* 
+---------------------------------------------
+Header
+--------------------------------------------- 
+*/
+header .top-bar {
+    background-color: var(--primary-darker-shade-two);
+    font-size: .85rem;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+.top-bar {
+        display: none;
+    }
+}
+.brand {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+.nav-bar .nav-item {
+    text-transform: uppercase;
+    font-weight: var(--normal);
+    font-style: var(--italics);
+    transition: all 500ms ease;
+    border-bottom: 2px solid transparent;
+}
+.nav-bar .nav-item:hover {
+    border-bottom: 2px solid var(--orange-lighter-shade-one);
+}
+
+
