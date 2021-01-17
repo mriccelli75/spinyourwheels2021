@@ -85,8 +85,7 @@ body
 --------------------------------------------- 
 */
 body {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-x: hidden; 
     height: 100%;
 }
 
@@ -144,6 +143,9 @@ a:focus,
 button:focus {
 	outline: none;
 }
+.dark {
+    color: white;
+}
 
 /* 
 ---------------------------------------------
@@ -186,7 +188,7 @@ nav {
         position: absolute;
         right: 0px;
         height: 100vh;
-        top: 20vh;
+        top: 40vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -213,6 +215,11 @@ nav {
     .navbar ul li a {
         font-size: 1.2rem;
     }
+    .brand {
+        width: 100px;
+        max-width: 100%;
+        height: auto;
+    }
 }
 .navbar ul.nav-active {
     transform: translateX(0);
@@ -237,3 +244,53 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 
 }
+/* 
+---------------------------------------------
+Hero
+--------------------------------------------- 
+*/
+.hero {
+    position: relative;
+}
+.hero::after
+ {
+    background: url(../img/triangle-bg.png) no-repeat;
+    background-size: 100% 214px;
+    bottom: 0;
+    content: "";
+    height: 214px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+@media (max-width: 767px) and (min-width: 481px) {
+    .hero::after {
+        background-size: 180% 214px;
+        bottom: 0;
+        width: 100%;
+    }
+}
+@media (max-width: 767px) and (min-width: 481px) {
+    .hero::after{
+        background: none;
+    }
+}
+.hero-content {
+    height: 120vh;
+    background-image: url('../img/1600x1014.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.hero-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(65, 105, 191, 0.7); 
+}
+
