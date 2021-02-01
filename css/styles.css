@@ -174,7 +174,7 @@ a:focus,
 button:focus {
 	outline: none;
 }
-.dark {
+.dark-background {
     color: white;
 }
 section {
@@ -260,7 +260,7 @@ nav {
         font-size: 1.2rem;
     }
     .brand {
-        width: 100px;
+        width: 120px;
         max-width: 100%;
         height: auto;
     }
@@ -298,7 +298,9 @@ Hero
     position: relative;
     padding: 0;
 }
-.hero::after
+
+@media (min-width: 481px) {
+    .hero::after
  {
     background: url(../img/triangle-bg.png) no-repeat;
     background-size: 100% 214px;
@@ -311,24 +313,23 @@ Hero
     right: 0;
     width: 100%;
 }
-@media (max-width: 767px) and (min-width: 481px) {
-    .hero::after {
-        background-size: 180% 214px;
-        bottom: 0;
-        width: 100%;
-    }
 }
-@media (max-width: 767px) and (min-width: 481px) {
+/* @media (max-width: 767px) and (min-width: 481px) {
     .hero::after{
         background: none;
     }
-}
+} */
 .hero-content {
     height: 120vh;
     background-image: url('../img/bg1.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
 }
 .hero-content:before {
     content: '';
@@ -338,6 +339,45 @@ Hero
     left: 0;
     right: 0;
     background-color: rgba(65, 105, 191, 0.7); 
+}
+ .hero-text{
+    margin-top: -5rem;
+ }  
+ .hero-text h4 {
+    font-family: 'Roboto Condensed';
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+ }
+ .hero-text h2 {
+    margin-bottom: .5rem;
+    font-size: 3.5rem;
+ }
+ .hero-text h2.section-title:before {
+    top: -22px;
+  
+}
+.hero-content .hero-text .btn:visited,
+.hero-content .hero-text .btn:focus {
+    color: white;
+    background-color: transparent;
+}
+@media (min-width:700px) {
+    .hero-text h2 {
+        margin-bottom: .5rem;
+        font-size: 4.75rem;
+    }
+}
+.social-box {
+    display: flex;
+
+}
+.social-box .social-item {
+    width: 100px;
+    margin-right: 1rem;
+    margin-top: 2rem;
 }
 /* 
 ---------------------------------------------
@@ -370,3 +410,7 @@ Layout
     }
 }
 
+.btn {
+    border-radius: 0px;
+    transition: ease-in .5s;
+}
