@@ -334,7 +334,7 @@ Hero
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
    
 }
 .hero-content:before {
