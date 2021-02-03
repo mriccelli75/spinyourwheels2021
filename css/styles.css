@@ -84,9 +84,9 @@ Version: 1.0
 body
 --------------------------------------------- 
 */
-html, body {
+/* html, body {
     overflow-x: hidden;
-  }
+  } */
 body {
     position: relative
   }
@@ -159,7 +159,7 @@ p {
 body {
 	font-family: var(--font-stack-body);
 	font-size: 16px;
-	color: #000000;
+	color: #333;
 	line-height: 1.5;
 	background: #fff;
 }
@@ -228,7 +228,8 @@ nav {
     display: flex;
 }
 .navbar ul li a {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    text-decoration: none;
 }
 .navbar .menu-toggle {
     display: none;
@@ -463,10 +464,7 @@ section#about {
         display: inline-block;
         vertical-align: top;
     }
-    .abt_left .img-wrap img:last-child {
-        display: inline-block;
-        margin: 20px 0 0 6px;
-    }
+    
     img.about_img1:before {
         content: '';
         position: absolute;
@@ -475,6 +473,12 @@ section#about {
         left: 0;
         right: 0;
         background-color: rgba(65, 105, 191, 0.7);
+    }
+}
+@media screen and (min-width:1200px){
+    .abt_left .img-wrap img:last-child {
+        display: inline-block;
+        margin: 20px 0 0 6px;
     }
 }
 /* .abt_left .img-wrap img {
@@ -501,3 +505,63 @@ section#about {
     }
 }
  */
+
+ /* Register for Event Page */
+ .register-for-event {
+    height: 98vh;
+    padding: 60px 0 60px;
+    background-image: url('../img/temp_spinning.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* background-attachment: fixed; */
+   
+}
+.register-for-event:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(65, 105, 191, 0.7); 
+}
+
+.register-text{
+    margin-top: -5rem;
+ }  
+ .register-text h4 {
+    font-family: 'Roboto Condensed';
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+ }
+ .register-text h2 {
+    margin-bottom: .5rem;
+    font-size: 3.5rem;
+ }
+ .register-text h2.section-title:before {
+    top: -22px;
+  
+}
+@media (min-width: 481px) {
+    .register-for-event::after {
+    background: url(../img/triangle-bg.png) no-repeat;
+    background-size: 100% 214px;
+    bottom: -1px;
+    content: "";
+    height: 214px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 100%;
+ }
+}
