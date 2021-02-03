@@ -84,9 +84,9 @@ Version: 1.0
 body
 --------------------------------------------- 
 */
-/* html, body {
+html {
     overflow-x: hidden;
-  } */
+}
 body {
     position: relative
   }
