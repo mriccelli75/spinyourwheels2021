@@ -84,7 +84,7 @@ Version: 1.0
 body
 --------------------------------------------- 
 */
-html {
+html, body {
     overflow-x: hidden;
 }
 body {
