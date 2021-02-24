@@ -136,7 +136,7 @@ h2.section-title span {
     position: relative;
     text-transform: uppercase;
 }
-.btn {
+/* .btn {
     transition: ease 0.5s;
 }
 .btn.active, 
@@ -144,10 +144,10 @@ h2.section-title span {
 .btn:hover {
     outline: none;
     border: 1px solid var(--orange);
-}
-.btn-outline-light:not(:disabled):not(.disabled):hover {
-    color: var(--orange);
-}
+}*/
+.btn-outline-light {
+    color: white;
+} 
 
 ul, li {
 	list-style: none;
@@ -183,6 +183,24 @@ a:hover, a:focus, a:visited {
 	text-decoration: none;
     outline: none;
     color: var(--primary-lighter-shade-one);
+}
+/* Primary Buttons */
+.btn-primary {
+    background: var(--primary-brand-blue);
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: 0.5s ease-in;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:focus
+{
+    color: white;
+    outline: dotted;
+    background: var(--primary-darker-shade-two);
+    border: none;
 }
 
 textarea {
@@ -392,6 +410,12 @@ Hero
     margin-right: 1rem;
     margin-top: 2rem;
 }
+.btn-lg {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2.2rem;
+    padding-left: 2.2rem;
+}
 @media (min-width:700px) {
     .hero-text h2 {
         margin-bottom: .5rem;
@@ -425,18 +449,19 @@ Hero
     border-radius: 0px;
 
 }
-.btn-lg {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 2.2rem;
-    padding-left: 2.2rem;
-}
-.btn-outline-light:not(:disabled):not(.disabled):active,
-.btn-outline-light:not(:disabled):not(.disabled):visited,
-.btn-outline-light:not(:disabled):not(.disabled):focus,
-.btn-outline-light:not(:disabled):not(.disabled):hover {
+
+a.btn-outline-light {
     color: white;
+}
+.btn-outline-light:not(:disabled):not(.disabled):hover,
+.btn-outline-light:not(:disabled):not(.disabled):active
+ {
+    color: var(--orange);
     background-color: transparent;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #CC9933, #407CBF);
 }
 
 
@@ -553,7 +578,7 @@ section#about {
   
 }
 @media (min-width: 481px) {
-    .register-for-event::after {
+ .register-for-event::after {
     background: url(../img/triangle-bg.png) no-repeat;
     background-size: 100% 214px;
     bottom: -1px;
@@ -565,4 +590,39 @@ section#about {
     right: 0;
     width: 100%;
  }
+}
+
+/* Instagram Feed Styles */
+.instagram-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Just placing border gradient stuff here for now */
+
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+.border-gradient-purple {
+    border-image-source: linear-gradient(to left, #CC9933, #407CBF);
+  }
+blockquote {
+    font: 1.65rem var(--font-stack-sans);
+    color: var(--primary-lighter-shade-three);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+}
+@media (min-width:990px) {
+    blockquote {
+        font-size: 1.65rem;
+    }
+    .blockquote-footer {
+        font-size: 100%;
+      
+    }
 }
