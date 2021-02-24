@@ -458,7 +458,10 @@ a.btn-outline-light {
  {
     color: var(--orange);
     background-color: transparent;
-    border: 1px solid var(--orange);
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #CC9933, #407CBF);
 }
 
 
@@ -587,4 +590,39 @@ section#about {
     right: 0;
     width: 100%;
  }
+}
+
+/* Instagram Feed Styles */
+.instagram-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Just placing border gradient stuff here for now */
+
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+  }
+.border-gradient-purple {
+    border-image-source: linear-gradient(to left, #CC9933, #407CBF);
+  }
+blockquote {
+    font: 1.65rem var(--font-stack-sans);
+    color: var(--primary-lighter-shade-three);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+}
+@media (min-width:990px) {
+    blockquote {
+        font-size: 1.65rem;
+    }
+    .blockquote-footer {
+        font-size: 100%;
+      
+    }
 }
