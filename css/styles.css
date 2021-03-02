@@ -198,8 +198,8 @@ a:hover, a:focus, a:visited {
 .btn-primary:focus
 {
     color: white;
-    outline: dotted;
-    background: var(--primary-darker-shade-two);
+    background: rgb(59,114,176);
+    background: linear-gradient(108deg, rgba(59,114,176,1) 0%, rgba(255,101,0,1) 64%);
     border: none;
 }
 
@@ -591,7 +591,11 @@ section#about {
     width: 100%;
  }
 }
-
+/*Instagram Styles */
+section.instagram-section {
+    background: url(../img/h5-backround-parallax-img.jpg);
+    background-repeat: no-repeat;
+}
 /* Instagram Feed Styles */
 .instagram-container {
     display: flex;
@@ -613,7 +617,7 @@ blockquote {
     color: var(--primary-lighter-shade-three);
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 20px;
     padding-left: 15px;
     border-left: 3px solid #ccc;
 }
