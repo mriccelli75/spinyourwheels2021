@@ -405,6 +405,9 @@ Hero
     margin-right: 1rem;
     margin-top: 2rem;
 }
+.social-box .social-item a {
+    display: block;
+}
 .btn-lg {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -625,17 +628,7 @@ blockquote {
       
     }
 }
-/* .img-box {
-    clip-path: polygon(18.5% 0, 100% 0, 100% 100%, 0 100%, 0 29%);
-}
-.img-box:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(65, 105, 191, 0.7);
-} */
+
+
 
 
