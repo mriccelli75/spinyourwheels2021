@@ -86,8 +86,8 @@ body
 */
 html, 
 body {
-    overflow-x: hidden;
-}
+    overflow-x:hidden;
+} 
 body {
     position: relative;
   }
@@ -355,7 +355,7 @@ Hero
     }
 } */
 .hero-content {
-    height: 98vh;
+    height: 100vh;
     padding: 1rem;
     background-image: url('../img/bg1.jpg');
     background-size: cover;
@@ -446,6 +446,28 @@ Hero
 .btn {
     border-radius: 0px;
 
+}
+/* Styles for hero section horizontal orientation */
+@media (max-height:376px) {
+    .hero-text {
+        margin-top: 8rem;
+    }
+  
+    .hero::after {
+        background: none;
+        /* background-size: 100% 214px;
+        bottom: -1px;
+        content: "";
+        height: 214px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        width: 100%; */
+     }
+     .navbar ul {
+        top: 37vh;
+     }
 }
 
 a.btn-outline-light {
@@ -589,6 +611,39 @@ section#about {
     width: 100%;
  }
 }
+/* Register section horizontal orientation */
+@media (max-height:376px) {
+    .register-text {
+           margin-top:auto;
+    }
+    .register-for-event::after {
+           background: none; 
+    }
+    .register-for-event {
+        height: auto;
+        padding: 60px 0 60px;
+        background-image: url(../img/temp_spinning.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-attachment:scroll;
+    }
+
+   #get-involved .item {
+        display: none;
+   }
+
+
+
+
+
+
+   }
 /*Instagram Styles */
 section.instagram-section {
     background: url(../img/h5-backround-parallax-img.jpg);
